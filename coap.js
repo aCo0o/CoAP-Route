@@ -4,6 +4,7 @@ var route   = require('./route');
 
 
 server.on('request', function(req, res) {
+  //handle the request through coap-route
   route.handle(req.url, req.method, req, res);
 });
 
