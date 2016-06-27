@@ -1,2 +1,31 @@
 # CoAP-Route
-NodeJS CoAP Request Handler
+NodeJS CoAP Request (Route & Method) Handler
+
+
+    ("coap-route") Is an nodeJS extention to mcollina's node-coap
+    
+    // Build by us to provide an easy way to handle Requested Routes & Methods
+    
+    
+    
+* route.js - Handles Request URL & Methods
+* please.js - Executes an CoAP response
+ 
+
+ 
+ 
+CoAP-Route Handle Example Server:
+
+        var coap    = require('coap');
+        var server  = coap.createServer();
+        var route   = require('./coap-route/route');
+        
+        
+        server.on('request', function(req, res) {
+          route.handle(req.url, req.method, req, res);
+        });
+        
+        
+        server.listen(function() {
+          console.log('CoAP-server started on Port:', server._port);
+        });
