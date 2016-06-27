@@ -1,0 +1,15 @@
+{
+  "name": "coap-route",
+  "version": "1.0.0",
+  "description": "A CoAP-Route example server",
+  "main": "coap.js",
+  "dependencies": {
+    "coap": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
