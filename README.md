@@ -36,7 +36,7 @@ CoAP-Route Handle Example Server:
         
 ===============
 
-
+# Adding custom routes
 * To handle your own routes just add a new case in the route.js (URL switch)
 
 
