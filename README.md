@@ -18,7 +18,7 @@ CoAP-Route Handle Example Server:
 
         var coap    = require('coap');
         var server  = coap.createServer();
-        var route   = require('./coap-route/route');
+        var route   = require('./route');
         
         
         server.on('request', function(req, res) {
