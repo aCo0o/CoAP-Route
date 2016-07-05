@@ -15,7 +15,7 @@ NodeJS CoAP Request (Route & Method) Handler
  
  
 CoAP-Route Handle Example Server:
-
+```javascript
         var coap    = require('coap');
         var server  = coap.createServer();
         var route   = require('./route');
@@ -29,7 +29,7 @@ CoAP-Route Handle Example Server:
         server.listen(function() {
           console.log('CoAP-server started on Port:', server._port);
         });
-        
+```
         
         
         
@@ -39,7 +39,8 @@ CoAP-Route Handle Example Server:
 # Adding custom routes
 * To handle your own routes just add a new case in the route.js (URL switch)
 
-
+```javascript
         case "/exampleRoute":
             res.end("This is an example of an custom CoAP route");
             break;
+```
